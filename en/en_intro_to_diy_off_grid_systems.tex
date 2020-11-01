@@ -73,7 +73,9 @@
   \includegraphics[width=0.25\paperwidth]{../Images/image_0_0_(demand_energy_equality).png}
 \end{center}
 
-TODO ADD IMAGE
+\begin{center}
+  \includegraphics[width=0.65\paperwidth]{../Images/image_0_1_(off_grid).png}
+\end{center}
 
 \vfill
   
@@ -246,14 +248,15 @@ Material may be freely shared and adapted under the following terms: You must gi
 \section{What is an off grid system} % (fold)
 \label{sec:what_is_an_off_grid_system}
 
-
   Off grid renewable systems refer to systems that have no connection to a wider electrical grid, that generate their power from renewable sources. In the UK, the grid in this definition would be the National Grid, which distributes electrical power from large power stations to consumers through a series of power transmission cables.
 
   There are three main elements of an off grid renewable energy system: generation, storage and consumption. Generation covers the part of the system that converts a renewable energy source into useful electrical energy, storage covers the means by which that energy is stored for use when needed, and consumption covers the appliances and equipment that draw power from the system to do the work we want them to do.
 
   We also need to consider system controls that the system to be monitored and regulated. These are used to make sure that too much stress is not placed on any part of the system when it is in use, to keep it in good working order.
 
-  TODO ADD IMAGE
+  \begin{center}
+    \includegraphics[width=0.60\paperwidth]{Images/image_3_1_(off_grid_diagram).png}
+  \end{center}
 
   \subsection{Why 12 Volt} % (fold)
   \label{sub:why_12_volt}
@@ -262,8 +265,6 @@ Material may be freely shared and adapted under the following terms: You must gi
 
     Another reason to choose 12V is that it is a relatively safe voltage to work at. Electricity can be dangerous at any voltage but a low voltage system will not cause an electric shock. There are some safety points to consider, that will be mentioned in the sections of this guide titled 'Safety Note'.
 
-    TODO ADJUST STYLING
-  
   % subsection why_12_volt (end)
 
 % section what_is_an_off_grid_system (end)
@@ -283,8 +284,10 @@ Material may be freely shared and adapted under the following terms: You must gi
     DEE offer one day workshops and online resources to teach people how to build their own solar panels from low cost and reused materials. Find out more on the \href{http://www.demandenergyequality.org/}{DEE website}.
 
     For more information on how solar cells work see Resource 6.
-
-    TODO ADD IMAGE
+    
+    \begin{center}
+      \includegraphics[width=0.45\paperwidth]{Images/image_4_1_(solar_breakdown).png}
+    \end{center}
   
   % subsection solar_panels (end)
 
@@ -380,7 +383,9 @@ Material may be freely shared and adapted under the following terms: You must gi
 
       The normal voltage range of a 12V battery is between 10.5 and 12.7V. Measuring the voltage of a battery allows you to determine its State of Charge (S.o.C.). A battery with a voltage of 12.7V has a S.o.C. of 100\%, and a battery with a voltage of 10.5V has a S.o.C. of 0\%. If the S.o.C. is kept above 50\% (measured at 12V) most of the build up of sulphur crystals during discharging readily dissolves back into the electrolyte solution during charging. Over time, repeated sulfation plays a role in the reduction of battery efficiency over time. If the battery is over discharged this build-up can harden and become difficult or impossible to remove, permanently reducing the effectiveness of your battery. 
 
-      TODO ADD IMAGE
+      \begin{center}
+        \includegraphics[width=0.65\paperwidth]{Images/image_5_1_(sulphation).png}
+      \end{center}
 
       For more details on how lead acid batteries work see Resource 1
     
@@ -431,7 +436,9 @@ Material may be freely shared and adapted under the following terms: You must gi
     \item Stopping the panel from draining the battery at night. At night the battery will have a higher charge than the panel and hence the battery can send a current through the panel if directly connected. 
   \end{enumerate}
 
-  TODO ADD IMAGE
+  \begin{center}
+    \includegraphics[width=0.25\paperwidth]{../Images/image_6_1_(charge_controller).png}
+  \end{center}
 
   \subsection{PWM and MPPT} % (fold)
   \label{sub:pwm_and_mppt}
@@ -462,7 +469,9 @@ Material may be freely shared and adapted under the following terms: You must gi
 
   You should also include a voltage display that shows the voltage of the system or some other way of displaying the battery S.o.C., allowing it to be monitored by users so they can self-regulate consumption according to how much the batteries are charged.
 
-  TODO ADD IMAGE
+  \begin{center}
+    \includegraphics[width=0.15\paperwidth]{../Images/image_7_1_(discharge_control).png}
+  \end{center}
 
 % section discharge_control (end)
 
@@ -472,7 +481,9 @@ Material may be freely shared and adapted under the following terms: You must gi
   \subsection{Fuses} % (fold)
   \label{sub:fuses}
 
-    TODO ADD IMAGE
+    \begin{center}
+      \includegraphics[width=0.15\paperwidth]{../Images/image_8_1_(fuse).png}
+    \end{center}
 
     Fuses are a crucial part of any electrical system. A fuse is essentially just a thin piece of wire that will break when the current running through it is higher than the limit the wire can handle. This makes them ideal for protection against surges and short circuits, that if uninterrupted would present a fire risk, possibly damage your appliances and drain your batteries to empty. 
   
@@ -509,7 +520,9 @@ Material may be freely shared and adapted under the following terms: You must gi
 
     \textbf{Step Down} converters can take a higher voltage down to 12V, allowing you to connect 12V appliances as normal. These are useful when using a power source that has been stepped-up for transmission, or when connecting to a large 24V or 48V battery bank.
 
-    TODO ADD IMAGE
+    \begin{center}
+      \includegraphics[width=0.15\paperwidth]{../Images/image_8_2_(dc_dc_converter).png}
+    \end{center}
 
     TODO ADD BOX
 
@@ -535,7 +548,9 @@ Material may be freely shared and adapted under the following terms: You must gi
 
       Terminal blocks are very useful for connecting together loose ends of wire. They are also useful in creating parallel connections, as you can have multiple wires in either end of the block. Another useful feature of connector blocks is that the screws that hold the wires into the blocks are conductive themselves, meaning you can apply a multimeter directly to them for testing.
 
-      TODO ADD BOX
+      \begin{center}
+        \includegraphics[width=0.15\paperwidth]{../Images/image_8_3_(terminal_connector).png}
+      \end{center}
 
     % subsubsection terminal_blocks (end)
 
@@ -553,12 +568,16 @@ Material may be freely shared and adapted under the following terms: You must gi
       Yellow Connector  2.5-6mm 2  wire
 
       \textbf{Spade connectors:} Many switches and components you are likely to use on small 12v systems will have a male spade connection on them. The easiest way to connect to these is with a female spade crimp connector.  
-
-      TODO ADD IMAGE
+    
+      \begin{center}
+        \includegraphics[width=0.15\paperwidth]{../Images/image_8_4_(spade_connector).png}
+      \end{center}
 
       \textbf{Ring Connectors:} These are useful for connecting to batteries and high-current appliances that have bolts at the terminals. The rings fit around the bolts allowing the bolts to hold the wires safely in place. The rings come in a range of sizes to support the range of battery bolts you might encounter.
-
-      TODO ADD IMAGE
+    
+      \begin{center}
+        \includegraphics[width=0.15\paperwidth]{../Images/image_8_5_(ring_connector).png}
+      \end{center}
     
     % subsubsection crimp_connectors (end)
 
@@ -622,8 +641,10 @@ Material may be freely shared and adapted under the following terms: You must gi
   \subsection{Inverters} % (fold)
   \label{sub:inverters}
 
-    TODO ADD IMAGE
-
+    \begin{center}
+      \includegraphics[width=0.15\paperwidth]{../Images/image_10_1_(inverter).png}
+    \end{center}
+    
     The component we need to do this is called an inverter. Inverters can be found relatively cheaply and easily. However, when choosing an inverter it is particularly important to remember that you get what you pay for.
 
     Unbranded cheap inverters have a number of drawbacks. Firstly, they can be very inefficient, wasting 20-30\% of the power supplied. This means your 60W laptop may consume more like 85W if powered through an inverter instead of through a 12V adapter.
@@ -634,7 +655,9 @@ Material may be freely shared and adapted under the following terms: You must gi
 
     Pure sine wave inverters can be a better choice than modified sine wave inverters, but will be more expensive. Pure sine wave inverters produce a sine wave that is as smooth as the national grid, meaning any appliance through them will work exactly as expected. They can also be more efficient in the power conversion, but this varies from inverter to inverter so do some research before buying.
 
-    TODO ADD IMAGE
+    \begin{center}
+      \includegraphics[width=0.30\paperwidth]{Images/image_10_2_(sine_wave).png}
+    \end{center}
   
   % subsection inverters (end)
 
@@ -653,7 +676,9 @@ Material may be freely shared and adapted under the following terms: You must gi
 
   This circuit includes a multimeter to measure current on the load - this is for testing the circuit during the workshop demonstration, and is not essential, although in any off grid installation we would recommend having something in place to measure consumption.
 
-  TODO ADD IMAGE
+  \begin{center}
+    \includegraphics[width=0.75\paperwidth]{Images/image_11_2_(12v_system).png}
+  \end{center}
 
   \subsection{Basic system modelling} % (fold)
   \label{sec:basic_system_modelling}
@@ -713,7 +738,9 @@ Material may be freely shared and adapted under the following terms: You must gi
 
     Power values on appliances may be estimates, or may represent the maximum consumption on an appliance with variable power levels. For an accurate measurement of how much power an appliance consumes under actual usage conditions, you can use a plug-in power monitor that records power consumed over time. 
 
-    TODO ADD IMAGE
+    \begin{center}
+      \includegraphics[width=0.15\paperwidth]{../Images/image_12_1_(watt_meter).png}
+    \end{center}
 
     Examples: 
 
@@ -875,7 +902,9 @@ Material may be freely shared and adapted under the following terms: You must gi
 
   If you answered 'yes' you should consider connecting the batteries in your battery bank in series, to increase the voltage. Once you have chosen your system voltage (12V, 24V or 48V), you may need to add ‘strings’ of batteries in parallel, to increase the capacity of the battery bank. You will then be able to transport your electricity at the 'stepped up' voltage and just use a step down at the usage end to take it back to 12V. If you don't need to step up your voltage for transmission you will generally be happy with a 12V battery bank, connecting all batteries in parallel.
 
-  TODO ADD IMAGE
+  \begin{center}
+    \includegraphics[width=0.75\paperwidth]{Images/image_13_1_(whole_system_1).png}
+  \end{center}
 
   When assembling a battery bank, make sure that all batteries you use are as identical as possible - use the same make and model of battery, and don’t mix new and old batteries in the same battery bank. You should also try to use the thickest, most heavy duty cables for connecting batteries together. This is because any internal resistance in the battery bank can cause the amount of charging and discharging individual batteries are exposed to become unbalanced, which can cause over-worked batteries to fail much sooner. Make sure to regularly isolate each string of batteries in parallel, and check their voltage to make sure they are all working as expected. 
 
@@ -883,11 +912,15 @@ Material may be freely shared and adapted under the following terms: You must gi
 
   The answer to this question will indicate how you connect together your panels. You may wish to connect all of your panels together in series to increase voltage and lower resistive losses. However, when dealing with multiple panels you will need to be sure your charge controller can handle this. For example, let’s assume we are using a basic charge controller rated for a current of 20A and a voltage of 50V, and 4x200W panels rated at 10A peak current and an open-circuit voltage of 20V. We have to make sure our solar array doesn’t generate above those values, by planning how we connect them together.
   
-  TODO ADD IMAGE
+  \begin{center}
+    \includegraphics[width=0.75\paperwidth]{Images/image_13_2_(whole_system_2).png}
+  \end{center}
   
   Connecting 4 panels in series: Each panel is rated at 10A @ 20V so total output would be 2A @ 80V.
 
-  TODO ADD IMAGE
+  \begin{center}
+    \includegraphics[width=0.75\paperwidth]{Images/image_13_3_(whole_system_3).png}
+  \end{center}
 
   Connecting 4 panels in series and parallel. Each panel is rated at 10A @ 20V so total output would be 20A @ 40V. This would be the configuration we would need to use with our example charge controller, since the first arrangement would generate above 50V, which would damage the charge controller.
 
@@ -990,7 +1023,11 @@ Material may be freely shared and adapted under the following terms: You must gi
   \subsection{Using a Multimeter} % (fold)
   \label{sub:using_a_multimeter}
 
-    TODO INSERT IMAGE
+    \begin{figure}[!ht]
+      \centering
+      \includegraphics[width=0.65\paperwidth]{Images/image_a_1_(multimeter).png}
+      \caption*{Image from 500tips.com}
+    \end{figure}
   
   % subsection using_a_multimeter (end)
 
