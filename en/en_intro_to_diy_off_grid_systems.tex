@@ -1,0 +1,480 @@
+\documentclass{article}
+ 
+\title{Intro to DIY Off Grid Systems}
+\author{Demand for Energy Equality}
+\date{October 2017 \\ Root source version: Version 2.0 \\ Translation version: Version 0.1}
+
+%inherited code
+\usepackage{amsmath,amsthm,amssymb,epsfig}
+\usepackage{hyperref}
+
+% imports for images
+\usepackage{caption}
+% \usepackage[demo]{graphicx}
+\usepackage{graphicx}
+% \usepackage{float}
+
+% import for resuming enumerated list
+\usepackage{enumitem}
+
+% code to remove numbering but keep the contents page filled
+\setcounter{secnumdepth}{0}
+
+\theoremstyle{definition}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newenvironment{pf}{{\noindent\sc Proof. }}{\qed}
+
+\theoremstyle{definition}
+\newtheorem*{defn}{Definition}
+\newtheorem*{exmp}{Example}
+\newtheorem*{prob}{Problem}
+\newtheorem*{info}{Information}
+\newtheorem*{warn}{Warning}
+\newtheorem*{quest}{Question}
+\newtheorem*{blockq}{Block Quote}
+\newtheorem*{strong}{Strong}
+\newtheorem*{code}{Code}
+\newtheorem*{coderesult}{Code Result}
+
+\theoremstyle{remark}
+\newtheorem*{rem}{Remark}
+\newtheorem*{note}{Note}
+\newtheorem*{exer}{Exercise}
+
+\setlength{\oddsidemargin}{0.25 in}
+\setlength{\evensidemargin}{-0.25 in}
+\setlength{\topmargin}{-0.6 in}
+\setlength{\textwidth}{6.5 in}
+\setlength{\textheight}{8.5 in}
+\setlength{\headsep}{0.75 in}
+\setlength{\parindent}{0 in}
+\setlength{\parskip}{0.1 in}
+
+%%%%%%%
+% Some commonly used notation
+%%%%%%%
+
+\def\R{{\mathbb R}}
+\def\X{{\mathcal X}}
+\def\Y{{\mathcal Y}}
+\def\E{{\mathbb E}}
+\def\sign{{\rm sign}}
+
+% END inherited code
+
+\begin{document}
+ 
+\maketitle{}
+
+\begin{center}
+  \includegraphics[width=0.25\paperwidth]{../Images/image_0_0_(demand_energy_equality).png}
+\end{center}
+
+TODO ADD IMAGE
+
+\vfill
+  
+\includegraphics[]{../Images/image_0_2_(license).png} \newline
+This guide is provided under a \href{https://creativecommons.org/licenses/by-sa/4.0/legalcode}{Creative Commons BY-SA} license: \newline
+Material may be freely shared and adapted under the following terms: You must give appropriate credit, provide a link to the license, and indicate if changes were made, and further distribution must be under the same license as the original.
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\section{Preface} % (fold)
+\label{sec:preface}
+
+  \subsection*{Introduction} % (fold)
+  \label{sub:introduction}
+  
+    This PDF has taken the content of the \href{https://www.demandenergyequality.org/get-started-with-offgrid}{"Intro to DIY Off Grid Systems"} PDF and put them into a form which can be easily corrected, improved and translated by the community using LaTeX a markdown language for technical topics.
+
+  % subsection introduction (end)
+
+  \subsection*{Notes} % (fold)
+  \label{sub:notes}
+
+    Please note the modifications which have been made \& where you can find updates.
+
+    \begin{enumerate}
+      \item All the content of the PDF and put them into a form which can be easily corrected, improved and translated by the community using LaTeX a markdown language for technical topics.
+      \item Any updates, corrections or translations to the PDF will be available at \href{https://github.com/darigovresearch/Intro-to-DIY-Off-Grid-Systems}{https://github.com/darigovresearch/Intro-to-DIY-Off-Grid-Systems} so do return periodically to check if you have the latest version.
+      \item Modifications from the original work includes typo correction, card merging \& consistency consolidation (see the commit history for [en] for the specific changes if any).
+    \end{enumerate}
+
+    Feel free to share the PDFs and give the repository a star so more people are likely to see this work and can get the most out of it.
+
+  % subsection notes (end)
+
+  \subsubsection*{License} % (fold)
+  \label{ssub:license}
+
+    Unless otherwise specified, everything in this PDF is covered by the following licence:
+
+    \includegraphics[]{../Images/image_0_2_(license).png} \newline
+
+    This work was based on the work \textbf{\textit{Intro to DIY Off Grid Systems}} by \href{https://www.demandenergyequality.org/}{Demand Energy Equality}, licensed under a \href{https://creativecommons.org/licenses/by-sa/4.0/legalcode}{Creative Commons BY-SA}.
+
+    To see this work in full go to \href{https://www.demandenergyequality.org/get-started-with-offgrid}{https://www.demandenergyequality.org/get-started-with-offgrid}
+  
+  % subsubsection license (end)
+
+% section preface (end)
+
+\newpage
+
+\section{Introduction} % (fold)
+\label{sec:introduction}
+
+  \subsection{The Demand Energy Equality project} % (fold)
+  \label{sub:the_demand_energy_equality_project}
+
+  % subsection the_demand_energy_equality_project (end)
+  
+  \subsection{Using this guide} % (fold)
+  \label{sub:using_this_guide}
+
+  % subsection using_this_guide (end)
+
+  \subsection{Disclaimer} % (fold)
+  \label{sub:disclaimer}
+
+  % subsection disclaimer (end)
+
+  \newpage  
+
+% section introduction (end)
+
+\section{Basic concepts} % (fold)
+\label{sec:basic_concepts}
+
+  \subsection{Power consumption} % (fold)
+  \label{sub:power_consumption}
+  
+  % subsection power_consumption (end)
+
+  \subsection{Voltage} % (fold)
+  \label{sub:voltage}
+  
+  % subsection voltage (end)
+
+  \subsection{Current} % (fold)
+  \label{sub:current}
+  
+  % subsection current (end)
+
+  \subsection{Resistance} % (fold)
+  \label{sub:resistance}
+  
+  % subsection resistance (end)
+
+  \subsection{Series and parallel circuits} % (fold)
+  \label{sub:series_and_parallel_circuits}
+  
+  % subsection series_and_parallel_circuits (end)
+
+% section basic_concepts (end)
+
+\section{What is an off grid system} % (fold)
+\label{sec:what_is_an_off_grid_system}
+
+  \subsection{Why 12 Volt} % (fold)
+  \label{sub:why_12_volt}
+  
+  % subsection why_12_volt (end)
+
+% section what_is_an_off_grid_system (end)
+
+\section{Generation} % (fold)
+\label{sec:generation}
+
+  \subsection{Solar panels} % (fold)
+  \label{sub:solar_panels}
+  
+  % subsection solar_panels (end)
+
+  \subsection{Wind turbines} % (fold)
+  \label{sub:wind_turbines}
+  
+  % subsection wind_turbines (end)
+
+  \subsection{Hydro-generation} % (fold)
+  \label{sub:hydro_generation}
+  
+  % subsection hydro_generation (end)
+
+  \subsection{Cycle powered generation} % (fold)
+  \label{sub:cycle_powered_generation}
+  
+  % subsection cycle_powered_generation (end)
+
+% section generation (end)
+
+\section{Storage} % (fold)
+\label{sec:storage}
+
+  \subsection{Batteries} % (fold)
+  \label{sub:batteries}
+  
+    \subsubsection{Specifications} % (fold)
+    \label{ssub:specifications}
+    
+    % subsubsection specifications (end)
+
+    \subsubsection{Battery types} % (fold)
+    \label{ssub:battery_types}
+    
+    % subsubsection battery_types (end)
+
+    \subsubsection{How lead acid batteries work} % (fold)
+    \label{ssub:how_lead_acid_batteries_work}
+    
+    % subsubsection how_lead_acid_batteries_work (end)
+
+    \subsubsection{Carbon intensity} % (fold)
+    \label{ssub:carbon_intensity}
+    
+    % subsubsection carbon_intensity (end)
+
+    \subsubsection{Buying second hand batteries} % (fold)
+    \label{ssub:buying_second_hand_batteries}
+    
+    % subsubsection buying_second_hand_batteries (end)
+
+    \subsubsection{Caring for lead acid batteries} % (fold)
+    \label{ssub:caring_for_lead_acid_batteries}
+    
+    % subsubsection caring_for_lead_acid_batteries (end)
+
+  % subsection batteries (end)
+
+% section storage (end)
+
+
+\section{Charge control} % (fold)
+\label{sec:charge_control}
+
+  \subsection{PWM and MPPT} % (fold)
+  \label{sub:pwm_and_mppt}
+  
+  % subsection pwm_and_mppt (end)
+
+  \subsection{Choosing the right charge controller} % (fold)
+  \label{sub:choosing_the_right_charge_controller}
+  
+  % subsection choosing_the_right_charge_controller (end)
+
+% section charge_control (end)
+
+\section{Discharge control} % (fold)
+\label{sec:discharge_control}
+
+% section discharge_control (end)
+
+\section{Other system level equipment} % (fold)
+\label{sec:other_system_level_equipment}
+
+  \subsection{Fuses} % (fold)
+  \label{sub:fuses}
+  
+    \subsubsection{Size and placement} % (fold)
+    \label{ssub:size_and_placement}
+    
+    % subsubsection size_and_placement (end)
+
+  % subsection fuses (end)
+
+  \subsection{Wire} % (fold)
+  \label{sub:wire}
+  
+  % subsection wire (end)
+
+  \subsection{DC voltage conversion: Step Up and Step Down} % (fold)
+  \label{sub:dc_voltage_conversion_step_up_and_step_down}
+  
+  % subsection dc_voltage_conversion_step_up_and_step_down (end)
+
+  \subsection{Connectors} % (fold)
+  \label{sub:connectors}
+  
+    \subsubsection{Terminal blocks} % (fold)
+    \label{ssub:terminal_blocks}
+    
+    % subsubsection terminal_blocks (end)
+
+    \subsubsection{Crimp connectors} % (fold)
+    \label{ssub:crimp_connectors}
+    
+    % subsubsection crimp_connectors (end)
+
+  % subsection connectors (end)
+
+% section other_system_level_equipment (end)
+
+\section{Usage level equipment} % (fold)
+\label{sec:usage_level_equipment}
+
+  \subsection{Plugs and sockets} % (fold)
+  \label{sub:plugs_and_sockets}
+  
+  % subsection plugs_and_sockets (end)
+
+  \subsection{Switches} % (fold)
+  \label{sub:switches}
+  
+  % subsection switches (end)
+
+  \subsection{Lights} % (fold)
+  \label{sub:lights}
+  
+  % subsection lights (end)
+
+  \subsection{USB} % (fold)
+  \label{sub:usb}
+  
+  % subsection usb (end)
+
+% section usage_level_equipment (end)
+
+\section{Appliances} % (fold)
+\label{sec:appliances}
+
+  \subsection{Using Household Appliances} % (fold)
+  \label{sub:using_household_appliances}
+  
+  % subsection using_household_appliances (end)
+
+  \subsection{Inverters} % (fold)
+  \label{sub:inverters}
+  
+  % subsection inverters (end)
+
+% section appliances (end)
+
+\section{Constructing a Simple 12V Off-Grid Circuit} % (fold)
+\label{sec:constructing_a_simple_12v_off_grid_circuit}
+
+  \section{Basic system modelling} % (fold)
+  \label{sec:basic_system_modelling}
+  
+  % section basic_system_modelling (end)
+
+  \section{Designing an efficient system} % (fold)
+  \label{sec:designing_an_efficient_system}
+
+    \subsubsection{Converting to heat} % (fold)
+    \label{ssub:converting_to_heat}
+    
+    % subsubsection converting_to_heat (end)
+
+    \subsubsection{Converting to cold} % (fold)
+    \label{ssub:converting_to_cold}
+    
+    % subsubsection converting_to_cold (end)
+
+    \subsubsection{Converting to mechanical} % (fold)
+    \label{ssub:converting_to_mechanical}
+    
+    % subsubsection converting_to_mechanical (end)
+
+    \subsubsection{Inverting to 240AC} % (fold)
+    \label{ssub:inverting_to_240ac}
+    
+    % subsubsection inverting_to_240ac (end)
+  
+  % section designing_an_efficient_system (end)
+
+  \section{Planning Your System} % (fold)
+  \label{sec:planning_your_system}
+  
+  % section planning_your_system (end)
+
+  \section{Calculating your consumption} % (fold)
+  \label{sec:calculating_your_consumption}
+  
+  % section calculating_your_consumption (end)
+
+  \section{Calculating battery storage} % (fold)
+  \label{sec:calculating_battery_storage}
+  
+  % section calculating_battery_storage (end)
+
+  \section{Calculating solar generation} % (fold)
+  \label{sec:calculating_solar_generation}
+  
+  % section calculating_solar_generation (end)
+
+  \section{System losses} % (fold)
+  \label{sec:system_losses}
+  
+  % section system_losses (end)
+
+% section constructing_a_simple_12v_off_grid_circuit (end)
+
+\section{Additional system modelling} % (fold)
+\label{sec:additional_system_modelling}
+
+  \subsection{Balancing seasonal generation with battery storage} % (fold)
+  \label{sub:balancing_seasonal_generation_with_battery_storage}
+  
+  % subsection balancing_seasonal_generation_with_battery_storage (end)
+
+  \subsection{Time of day consumption modelling} % (fold)
+  \label{sub:time_of_day_consumption_modelling}
+  
+  % subsection time_of_day_consumption_modelling (end)
+
+  \subsection{Where to compromise} % (fold)
+  \label{sub:where_to_compromise}
+  
+  % subsection where_to_compromise (end)
+
+% section additional_system_modelling (end)
+
+\section{Constructing the Whole System} % (fold)
+\label{sec:constructing_the_whole_system}
+
+% section constructing_the_whole_system (end)
+
+\section{Resources} % (fold)
+\label{sec:resources}
+
+  \subsection{Useful Information for Installations} % (fold)
+  \label{sub:useful_information_for_installations}
+  
+  % subsection useful_information_for_installations (end)
+
+  \subsection{Other Renewable Energy Resources} % (fold)
+  \label{sub:other_renewable_energy_resources}
+  
+  % subsection other_renewable_energy_resources (end)
+
+  \subsection{Off grid system component suppliers} % (fold)
+  \label{sub:off_grid_system_component_suppliers}
+  
+  % subsection off_grid_system_component_suppliers (end)
+
+% section resources (end)
+
+\section{Appendices} % (fold)
+\label{sec:appendices}
+
+  \subsection{Equipment List} % (fold)
+  \label{sub:equipment_list}
+  
+  % subsection equipment_list (end)
+
+  \subsection{Using a Multimeter} % (fold)
+  \label{sub:using_a_multimeter}
+  
+  % subsection using_a_multimeter (end)
+
+% section appendices (end)
+
+\end{document}
