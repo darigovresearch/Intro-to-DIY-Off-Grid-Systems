@@ -17,6 +17,9 @@
 % import for resuming enumerated list
 \usepackage{enumitem}
 
+% colour import
+\usepackage[dvipsnames]{xcolor}
+
 % code to remove numbering but keep the contents page filled
 \setcounter{secnumdepth}{0}
 
@@ -89,17 +92,17 @@ Material may be freely shared and adapted under the following terms: You must gi
 
 \newpage
 
-\section{Preface} % (fold)
+{\color{blue}\section{Preface}} % (fold)
 \label{sec:preface}
 
-  \subsection*{Introduction} % (fold)
+  {\color{blue}\subsection*{Introduction}} % (fold)
   \label{sub:introduction}
   
     This PDF has taken the content of the \href{https://www.demandenergyequality.org/get-started-with-offgrid}{"Intro to DIY Off Grid Systems"} PDF and put them into a form which can be easily corrected, improved and translated by the community using LaTeX a markdown language for technical topics.
 
   % subsection introduction (end)
 
-  \subsection*{Notes} % (fold)
+  {\color{blue}\subsection*{Notes}} % (fold)
   \label{sub:notes}
 
     Please note the modifications which have been made \& where you can find updates.
@@ -114,7 +117,7 @@ Material may be freely shared and adapted under the following terms: You must gi
 
   % subsection notes (end)
 
-  \subsection*{License} % (fold)
+  {\color{blue}\subsection*{License}} % (fold)
   \label{sub:license}
 
     Unless otherwise specified, everything in this PDF is covered by the following licence:
@@ -131,10 +134,10 @@ Material may be freely shared and adapted under the following terms: You must gi
 
 \newpage
 
-\section{Introduction} % (fold)
+{\color{blue}\section{Introduction}} % (fold)
 \label{sec:introduction}
 
-  \subsection{The Demand Energy Equality project} % (fold)
+  {\color{blue}\subsection{The Demand Energy Equality project}} % (fold)
   \label{sub:the_demand_energy_equality_project}
 
     Demand Energy Equality (DEE) is a UK based community energy project that seeks to provide practical energy education, relating mainly to solar generation. We are a group working for systemic change in the way energy is produced, distributed, controlled, delivered and used. These aims are within the context of rising energy inequality (in the UK, at least), rising fuel bills, climate change and the increasing cost of fossil fuel extraction. See our website to find out more about the project.
@@ -143,7 +146,7 @@ Material may be freely shared and adapted under the following terms: You must gi
 
   % subsection the_demand_energy_equality_project (end)
   
-  \subsection{Using this guide} % (fold)
+  {\color{blue}\subsection{Using this guide}} % (fold)
   \label{sub:using_this_guide}
 
     This written guide is for anyone interested in building their own basic off grid energy system, or learning more about the concepts involved. It assumes no prior knowledge of any kind relevant to completing a fully working project. The guide is designed to to act as a learning aid for participants on the ‘Introduction to Off Grid’ workshops run by Demand Energy Equality, and can be used alongside other DIY guides and resources provided by DEE. 
@@ -160,7 +163,7 @@ Material may be freely shared and adapted under the following terms: You must gi
 
   % subsection using_this_guide (end)
 
-  \subsection{Disclaimer} % (fold)
+  {\color{blue}\subsection{Disclaimer}} % (fold)
   \label{sub:disclaimer}
 
     This guide is for general guidance only and whilst every effort is made to ensure that the information it contains is correct, it should not be relied upon as accurate. The information / advice contained within this guide is intended for use within the UK only and by persons of no less than 18 years of age. Use this guide at your own risk.
@@ -173,10 +176,10 @@ Material may be freely shared and adapted under the following terms: You must gi
 
 % section introduction (end)
 
-\section{Basic concepts} % (fold)
+{\color{blue}\section{Basic concepts}} % (fold)
 \label{sec:basic_concepts}
 
-  \subsection{Power consumption} % (fold)
+  {\color{blue}\subsection{Power consumption}} % (fold)
   \label{sub:power_consumption}
 
     \textit{Power} is a measure of  work done in any instant, measured in watts (W). You'll typically find a value of the number of watts an appliance needs to operate written on the outer case or on the adaptor that plugs into the wall socket. The power consumption of a laptop, for example, is commonly around 60 watts (less for basic netbooks and more for high-end laptops with advanced graphics). This is the measurement that tells you how much power you actually need to deliver for every moment that the appliance is in operation. As it is an instantaneous measure you can find a more useful measure by introducing time into the equation. The unit we will use for this is watt hours (Wh), which is a measurement of energy. Energy is directly related to power and time using the equation:
@@ -189,14 +192,14 @@ Material may be freely shared and adapted under the following terms: You must gi
   
   % subsection power_consumption (end)
 
-  \subsection{Voltage} % (fold)
+  {\color{blue}\subsection{Voltage}} % (fold)
   \label{sub:voltage}
 
     \textit{Voltage} is the potential  to do work. It is measured in volts (V). Imagining electricity like a flow of water turning a water wheel, the voltage is like the height of the flow of water flowing into the water wheel. If the voltage is too low the water will just flow underneath the water wheel and the water wheel won't turn. A higher voltage will turn the wheel effectively. A voltage too high could be damaging to the water wheel. In the same way a voltage too high for an appliance will damage the appliance. 
 
   % subsection voltage (end)
 
-  \subsection{Current} % (fold)
+  {\color{blue}\subsection{Current}} % (fold)
   \label{sub:current}
 
     \textit{Current} is the flow of electricity and is measured in amps (A). Using the same flow of water analogy current is the amount of water flowing. Lots of flow allows the water wheel to turn faster, less flow allows it to flow less quickly. Power is directly related to voltage and current using the equation:
@@ -209,14 +212,14 @@ Material may be freely shared and adapted under the following terms: You must gi
 
   % subsection current (end)
 
-  \subsection{Resistance} % (fold)
+  {\color{blue}\subsection{Resistance}} % (fold)
   \label{sub:resistance}
 
     \textit{Resistance} reduces the flow of electricity through a wire or component. It is a bit like forcing the water from our analogy to travel through a gorge filled with rapids. Relative to the same amount of water flowing through a smooth channel, the ability to deliver power at the other end will be reduced. All components and wires have an internal resistance that uses up the power you are supplying without doing any useful work. This is something we want to minimise in our systems. 
   
   % subsection resistance (end)
 
-  \subsection{Series and parallel circuits} % (fold)
+  {\color{blue}\subsection{Series and parallel circuits}} % (fold)
   \label{sub:series_and_parallel_circuits}
 
     Electrical circuits behave in different ways depending on how they are connected. There are two types of connections: 
@@ -245,7 +248,7 @@ Material may be freely shared and adapted under the following terms: You must gi
 
 % section basic_concepts (end)
 
-\section{What is an off grid system} % (fold)
+{\color{blue}\section{What is an off grid system}} % (fold)
 \label{sec:what_is_an_off_grid_system}
 
   Off grid renewable systems refer to systems that have no connection to a wider electrical grid, that generate their power from renewable sources. In the UK, the grid in this definition would be the National Grid, which distributes electrical power from large power stations to consumers through a series of power transmission cables.
@@ -258,7 +261,7 @@ Material may be freely shared and adapted under the following terms: You must gi
     \includegraphics[width=0.60\paperwidth]{Images/image_3_1_(off_grid_diagram).png}
   \end{center}
 
-  \subsection{Why 12 Volt} % (fold)
+  {\color{blue}\subsection{Why 12 Volt}} % (fold)
   \label{sub:why_12_volt}
 
     Both the solar panels and the off grid systems recommended by Demand Energy Equality are based around 12 Volt (12V) systems. This is because 12V is a standard off-grid electrical voltage. Designing around a voltage of 12V makes a lot of technology and equipment available at relatively low cost, meaning systems are simple to design, build and maintain. 12V is the voltage of car electrical systems, so anything that plugs into a car cigarette lighter socket should be compatible with our systems. Lights, music systems, phone and laptop chargers, even kettles, fridges and cookers are readily available at 12V. 
@@ -269,14 +272,14 @@ Material may be freely shared and adapted under the following terms: You must gi
 
 % section what_is_an_off_grid_system (end)
 
-\section{Generation} % (fold)
+{\color{blue}\section{Generation}} % (fold)
 \label{sec:generation}
 
   This guide primarily focuses on solar installations but for completeness other forms of popular small scale renewable energy generation are referred to in this section. Not all information in this guide is relevant to all forms of electrical generation so be sure to consult other resources when working with anything other than small scale solar.
 
   When charging batteries, the voltage of the power supply must be higher than the nominal voltage of the battery. Most batteries need to be charged at a very specific voltage, so make sure that your generation voltage is in the correct range. 
 
-  \subsection{Solar panels} % (fold)
+  {\color{blue}\subsection{Solar panels}} % (fold)
   \label{sub:solar_panels}
 
     Solar panels generate energy by utilising the energy from photons from the sun to excite electrons in a silicon semiconductor creating a voltage difference. The open circuit voltage (Voc) of a solar array used in a 12V system with lead acid batteries is generally around 18V. 
@@ -291,7 +294,7 @@ Material may be freely shared and adapted under the following terms: You must gi
   
   % subsection solar_panels (end)
 
-  \subsection{Wind turbines} % (fold)
+  {\color{blue}\subsection{Wind turbines}} % (fold)
   \label{sub:wind_turbines}
 
     Wind turbines utilise the wind to power a generator. Inside the generator the wind turns a magnet across a conductor (such as coils of copper wire), creating a current in a circuit. Wind turbines can be made from recycled materials. There are lots of instructions available online and different organisations offer courses in the UK. Communities such as Grow Heathrow have made their own wind turbines from free and recycled materials.
@@ -300,14 +303,14 @@ Material may be freely shared and adapted under the following terms: You must gi
   
   % subsection wind_turbines (end)
 
-  \subsection{Hydro-generation} % (fold)
+  {\color{blue}\subsection{Hydro-generation}} % (fold)
   \label{sub:hydro_generation}
 
     Similar to wind turbine generation, hydro-generation utilise a flow of water to power a generator. Inside the generator the water turns a magnet across a conductor (such as coils of copper wire), creating a current in a circuit. Small scale hydro generators can be made from recycled materials, and can convert the energy contained in hillside streams. Again, instructions can be found online. The community Steward Wood has made a hydro-generator from recycled materials, and more information can be found in Resource 8.
   
   % subsection hydro_generation (end)
 
-  \subsection{Cycle powered generation} % (fold)
+  {\color{blue}\subsection{Cycle powered generation}} % (fold)
   \label{sub:cycle_powered_generation}
 
     Cycle powered generation works, again, in a similar way to wind and hydro. Cycle powered generators can be easily constructed from electric DC motors. Direct drive motors that usually spin when a voltage is applied to them will also generate a voltage when spun. If you use motors with the right torque and revolution ratio they can be an ideal match up to a person cycling at a steady pace.
@@ -320,10 +323,10 @@ Material may be freely shared and adapted under the following terms: You must gi
 
 % section generation (end)
 
-\section{Storage} % (fold)
+{\color{blue}\section{Storage}} % (fold)
 \label{sec:storage}
 
-  \subsection{Batteries} % (fold)
+  {\color{blue}\subsection{Batteries}} % (fold)
   \label{sub:batteries}
 
     Batteries are the heart of our system, and we will essentially design our whole system around them. The function of the batteries is to store electrical energy for use later on. This is what will make our solar panels actually useful, as we can take the power produced by the panels and use it in faster bursts when we want it, or when the sun has gone down. 
@@ -425,7 +428,7 @@ Material may be freely shared and adapted under the following terms: You must gi
 % section storage (end)
 
 
-\section{Charge control} % (fold)
+{\color{blue}\section{Charge control}} % (fold)
 \label{sec:charge_control}
 
   Charge controllers play a number of essential roles in ensuring that the correct charge is delivered to the battery at the correct time, protecting your batteries and increasing their life by: 
@@ -440,7 +443,7 @@ Material may be freely shared and adapted under the following terms: You must gi
     \includegraphics[width=0.25\paperwidth]{../Images/image_6_1_(charge_controller).png}
   \end{center}
 
-  \subsection{PWM and MPPT} % (fold)
+  {\color{blue}\subsection{PWM and MPPT}} % (fold)
   \label{sub:pwm_and_mppt}
 
     \textbf{PWM} (Pulse Width Modulation) controllers regulate the voltage coming from a solar panel by rapidly switching the connection between the solar panels and the battery on and off. Since this doesn’t change the current, there is a loss in power reaching the battery. If using a PWM charge controller, the voltage of the solar array used should have an open circuit voltage of 17-18V in order to generate the voltages needed with minimal power lost. The overall power efficiency of PWM charge controllers is around 70-80\%.
@@ -449,7 +452,7 @@ Material may be freely shared and adapted under the following terms: You must gi
   
   % subsection pwm_and_mppt (end)
 
-  \subsection{Choosing the right charge controller} % (fold)
+  {\color{blue}\subsection{Choosing the right charge controller}} % (fold)
   \label{sub:choosing_the_right_charge_controller}
 
     The correct charge controller will match the demands of your panels and batteries. If you are connecting a large panel array you will need to ensure the charge controller can handle the nominal input voltage and current of your panels. Similarly if you are using a large battery bank at a higher voltage (24V or 48V) you will need to ensure the charge controller can handle this voltage. More expensive MPPTs will generally give you more options. For a small set up with a couple of panels and batteries the inexpensive PWM charge controllers will be adequate. 
@@ -458,7 +461,7 @@ Material may be freely shared and adapted under the following terms: You must gi
 
 % section charge_control (end)
 
-\section{Discharge control} % (fold)
+{\color{blue}\section{Discharge control}} % (fold)
 \label{sec:discharge_control}
 
   As well as making sure you don’t overcharge your battery, you need to make sure you don’t discharge it to the point where it suffers from permanent sulfation. For this, you need something in place to disconnect loads when the the S.o.C. drops below an acceptable limit. Systems without discharge control are vulnerable to over-discharge of the battery, which is the easiest way to cause permanent damage to the batteries.
@@ -475,10 +478,10 @@ Material may be freely shared and adapted under the following terms: You must gi
 
 % section discharge_control (end)
 
-\section{Other system level equipment} % (fold)
+{\color{blue}\section{Other system level equipment}} % (fold)
 \label{sec:other_system_level_equipment}
 
-  \subsection{Fuses} % (fold)
+  {\color{blue}\subsection{Fuses}} % (fold)
   \label{sub:fuses}
 
     \begin{center}
@@ -498,7 +501,7 @@ Material may be freely shared and adapted under the following terms: You must gi
 
   % subsection fuses (end)
 
-  \subsection{Wire} % (fold)
+  {\color{blue}\subsection{Wire}} % (fold)
   \label{sub:wire}
 
     The thickness of the wire you use to transmit electricity is crucial for minimising line losses. Line losses occur due to the internal resistance of the wire used. The higher the current, the higher the potential line losses and the thicker the wire required. 
@@ -509,7 +512,7 @@ Material may be freely shared and adapted under the following terms: You must gi
   
   % subsection wire (end)
 
-  \subsection{DC voltage conversion: Step Up and Step Down} % (fold)
+  {\color{blue}\subsection{DC voltage conversion: Step Up and Step Down}} % (fold)
   \label{sub:dc_voltage_conversion_step_up_and_step_down}
 
     As described in the section above, internal resistance of conducting wire can mean you lose power in transmission if your wire is not thick enough. Thick wire is expensive, so if you need to transport your electricity long distances from your panels to where you will be using the electricity you will want to consider alternatives.
@@ -532,7 +535,7 @@ Material may be freely shared and adapted under the following terms: You must gi
   
   % subsection dc_voltage_conversion_step_up_and_step_down (end)
 
-  \subsection{Connectors} % (fold)
+  {\color{blue}\subsection{Connectors}} % (fold)
   \label{sub:connectors}
 
     Connectors are basically just safe and secure ways to connect wires together. There are a vast range of connectors on the market and you may find ones not mentioned here suit your needs better. This section outlines the ones used in the Intro to Off Grid workshop. The simplest way of connecting together two wires is to twist them, solder them, then insulate them using heatshrink or electrical tape. This can also be the most secure if done correctly, but cannot be easily undone, so using the connectors listed below may be more convenient.
@@ -585,10 +588,10 @@ Material may be freely shared and adapted under the following terms: You must gi
 
 % section other_system_level_equipment (end)
 
-\section{Usage level equipment} % (fold)
+{\color{blue}\section{Usage level equipment}} % (fold)
 \label{sec:usage_level_equipment}
 
-  \subsection{Plugs and sockets} % (fold)
+  {\color{blue}\subsection{Plugs and sockets}} % (fold)
   \label{sub:plugs_and_sockets}
 
     Having appropriate plugs and sockets make your 12V off-grid system much easier to use. A socket that can be used for multiple appliances means that you have the flexibility of using what you want when you want it. Consider in relation to a normal home what you might want to hard-wire in place (lights, pumps) and what would work better with a plug and socket (most other things). Sockets (the female side) are the source of power, while plugs (the male side) draw the power from the socket. This is to mitigate the risk of electrocution from a protruding male connector. 
@@ -599,21 +602,21 @@ Material may be freely shared and adapted under the following terms: You must gi
   
   % subsection plugs_and_sockets (end)
 
-  \subsection{Switches} % (fold)
+  {\color{blue}\subsection{Switches}} % (fold)
   \label{sub:switches}
 
     Switches are very simple devices that are used to open and close circuits. Switches are the easiest way for a user to control when and where power is used in a system system. When including a switch in a circuit remember that any lights and appliances connected in series with it will be affected by it. Any lights and appliances in parallel with the switched circuit are on a separate circuit and will not be affected by it. It is often a good idea to install a main isolator switch at the very start of your system so that you can easily switch everything off. In most electrics, wires are run to ensure switches are located conveniently (it is not always convenient to put the light switch right beside the light). Switches are also a good idea for any hard-wired appliances that have LEDs in them, as these will drain a small amount of power even when you are not using them.
   
   % subsection switches (end)
 
-  \subsection{Lights} % (fold)
+  {\color{blue}\subsection{Lights}} % (fold)
   \label{sub:lights}
 
     Not all 12V lights are created equal. LEDs (light emitting diodes) and SMDs (surface mounted diodes) draw about 10 times less current than 12V halogen lights. This difference adds up quickly under normal use. 
   
   % subsection lights (end)
 
-  \subsection{USB} % (fold)
+  {\color{blue}\subsection{USB}} % (fold)
   \label{sub:usb}
 
     USB sockets supply power at 5V for USB appliances. So in order to charge anything via USB you will need to ensure the voltage is stepped down to 5V. Equipment to do this can be found very cheaply online. 
@@ -622,12 +625,12 @@ Material may be freely shared and adapted under the following terms: You must gi
 
 % section usage_level_equipment (end)
 
-\section{Appliances} % (fold)
+{\color{blue}\section{Appliances}} % (fold)
 \label{sec:appliances}
 
   Appliances that take a 12V DC power input or that plug into a car cigarette lighter socket can be used directly in your 12V system. These include but are not limited to: lights, mobile phone chargers, laptop chargers, kettles, fridges, fans, vacuum cleaners, air pumps, soldering irons and DVD players. 
 
-  \subsection{Using Household Appliances} % (fold)
+  {\color{blue}\subsection{Using Household Appliances}} % (fold)
   \label{sub:using_household_appliances}
 
     Sometimes it is desirable to run appliances that you would normally power from your household mains via your low voltage system. To do this you will need to invert the power supply.
@@ -638,7 +641,7 @@ Material may be freely shared and adapted under the following terms: You must gi
   
   % subsection using_household_appliances (end)
 
-  \subsection{Inverters} % (fold)
+  {\color{blue}\subsection{Inverters}} % (fold)
   \label{sub:inverters}
 
     \begin{center}
@@ -663,7 +666,7 @@ Material may be freely shared and adapted under the following terms: You must gi
 
 % section appliances (end)
 
-\section{Constructing a Simple 12V Off-Grid Circuit} % (fold)
+{\color{blue}\section{Constructing a Simple 12V Off-Grid Circuit}} % (fold)
 \label{sec:constructing_a_simple_12v_off_grid_circuit}
 
   The 'Circuit Diagram' shown below gives an overview of how to connect a solar panel, charge controller, battery, battery guard, fuse, lights, laptop charger and phone charger all together into a simple off grid circuit. 
@@ -680,12 +683,12 @@ Material may be freely shared and adapted under the following terms: You must gi
     \includegraphics[width=0.75\paperwidth]{Images/image_11_2_(12v_system).png}
   \end{center}
 
-  \subsection{Basic system modelling} % (fold)
+  {\color{blue}\subsection{Basic system modelling}} % (fold)
   \label{sec:basic_system_modelling}
   
   % subsection basic_system_modelling (end)
 
-  \subsection{Designing an efficient system} % (fold)
+  {\color{blue}\subsection{Designing an efficient system}} % (fold)
   \label{sub:designing_an_efficient_system}
 
     The key to designing an efficient off-grid electrical system is consideration of the power conversions used to run the appliances we wish to use. In modern conventional society we expect electricity to be abundant, meaning that its use as a general energy source can be taken for granted. In a solar off-grid system, particularly in the winter, electricity is not so freely available and thus ensuring that we use the right power supply for the right task is crucial. 
@@ -722,7 +725,7 @@ Material may be freely shared and adapted under the following terms: You must gi
   
   % subsection designing_an_efficient_system (end)
 
-  \subsection{Planning Your System} % (fold)
+  {\color{blue}\subsection{Planning Your System}} % (fold)
   \label{sub:planning_your_system}
 
     Planning an off-grid system will generally be a series of trade-offs. Perhaps you have a limited number of panels and wish to figure out how many batteries to invest in. Or perhaps you are able to aquire a large number of panels and wish to minimise the number of batteries in your system. There will always be a trade off between consumption, generation (from panels) and storage (in batteries). 
@@ -731,7 +734,7 @@ Material may be freely shared and adapted under the following terms: You must gi
   
   % subsection planning_your_system (end)
 
-  \subsection{Calculating your consumption} % (fold)
+  {\color{blue}\subsection{Calculating your consumption}} % (fold)
   \label{sub:calculating_your_consumption}
 
     In order to plan your off grid system you need to start by considering what you actually wish to power. Find the power consumption of the appliances you wish to include by looking at their specifications, which will either be printed on an appliance or will be in its manual. Power consumption will be indicated in watts (W) or kilowatts (kW). Sometimes the appliance will indicate the current draw in Amps (A), which will need to be multiplied by the voltage of the appliance to calculate the power consumption in watts.
@@ -760,7 +763,7 @@ Material may be freely shared and adapted under the following terms: You must gi
   
   % subsection calculating_your_consumption (end)
 
-  \subsection{Calculating battery storage} % (fold)
+  {\color{blue}\subsection{Calculating battery storage}} % (fold)
   \label{sub:calculating_battery_storage}
 
     The easiest way to size your battery storage is to consider times of the year where there will be little to no solar generation coming in. At these times, you batteries will need to store enough energy to match your consumption over those days, without being discharged too low.
@@ -779,7 +782,7 @@ Material may be freely shared and adapted under the following terms: You must gi
 
   % subsection calculating_battery_storage (end)
 
-  \subsection{Calculating solar generation} % (fold)
+  {\color{blue}\subsection{Calculating solar generation}} % (fold)
   \label{sub:calculating_solar_generation}
 
     Now that we know our daily power consumption, we can calculate the power we can generate from our solar panels.
@@ -798,7 +801,7 @@ Material may be freely shared and adapted under the following terms: You must gi
   
   % subsection calculating_solar_generation (end)
 
-  \subsection{System losses} % (fold)
+  {\color{blue}\subsection{System losses}} % (fold)
   \label{sub:system_losses}
 
     When doing all these calculations, you need to take into account any energy losses within the system. These losses come from internal wire resistance, inversion and conversion losses, and losses through your charge controller. For a detailed design you should check the specifications of each component you wish to use in your system, make a note of its efficiency rating, and adjust power generation and consumption calculations as appropriate. For a basic design you can assume overall system losses of 15\%.
@@ -815,10 +818,10 @@ Material may be freely shared and adapted under the following terms: You must gi
 
 % section constructing_a_simple_12v_off_grid_circuit (end)
 
-\section{Additional system modelling} % (fold)
+{\color{blue}\section{Additional system modelling}} % (fold)
 \label{sec:additional_system_modelling}
 
-  \subsection{Balancing seasonal generation with battery storage} % (fold)
+  {\color{blue}\subsection{Balancing seasonal generation with battery storage}} % (fold)
   \label{sub:balancing_seasonal_generation_with_battery_storage}
 
     In higher latitudes one of the most crucial aspects when considering the capacity of your battery bank is the difference in power generation between summer and winter. For a perfectly utilized system, if we are to rely on solar as our renewable energy source, we will either need to use much less power in winter or we will need to store energy generated in summer to be used in winter. Realistically we will probably need to do a combination by having some battery storage AND reducing our demands in winter.
@@ -845,7 +848,7 @@ Material may be freely shared and adapted under the following terms: You must gi
   
   % subsection balancing_seasonal_generation_with_battery_storage (end)
 
-  \subsection{Time of day consumption modelling} % (fold)
+  {\color{blue}\subsection{Time of day consumption modelling}} % (fold)
   \label{sub:time_of_day_consumption_modelling}
 
     One of the major considerations in designing a renewable power systems is the accessibility of power when the renewables are not generating.
@@ -858,7 +861,7 @@ Material may be freely shared and adapted under the following terms: You must gi
   
   % subsection time_of_day_consumption_modelling (end)
 
-  \subsection{Where to compromise} % (fold)
+  {\color{blue}\subsection{Where to compromise}} % (fold)
   \label{sub:where_to_compromise}
 
     When planning and designing your system you will generally have one of two priorities, either to make a system within budget, or to have enough power to meet all your needs.
@@ -893,7 +896,7 @@ Material may be freely shared and adapted under the following terms: You must gi
 
 % section additional_system_modelling (end)
 
-\section{Constructing the Whole System} % (fold)
+{\color{blue}\section{Constructing the Whole System}} % (fold)
 \label{sec:constructing_the_whole_system}
 
   In constructing your whole system there are a few important questions to consider:
@@ -930,7 +933,7 @@ Material may be freely shared and adapted under the following terms: You must gi
 
 % section constructing_the_whole_system (end)
 
-\section{Resources} % (fold)
+{\color{blue}\section{Resources}} % (fold)
 \label{sec:resources}
 
   \subsubsection{Useful Information for Installations} % (fold)
@@ -981,10 +984,10 @@ Material may be freely shared and adapted under the following terms: You must gi
 
 % section resources (end)
 
-\section{Appendices} % (fold)
+{\color{blue}\section{Appendices}} % (fold)
 \label{sec:appendices}
 
-  \subsection{Equipment List} % (fold)
+  {\color{blue}\subsection{Equipment List}} % (fold)
   \label{sub:equipment_list}
 
     \textbf{Equipment – System Level} \newline
@@ -1020,7 +1023,7 @@ Material may be freely shared and adapted under the following terms: You must gi
       
   % subsection equipment_list (end)
 
-  \subsection{Using a Multimeter} % (fold)
+  {\color{blue}\subsection{Using a Multimeter}} % (fold)
   \label{sub:using_a_multimeter}
 
     \begin{figure}[!ht]
