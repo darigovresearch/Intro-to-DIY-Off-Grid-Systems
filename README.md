@@ -27,6 +27,7 @@ The original file can be previewed [here](https://github.com/darigovresearch/Int
 | `ru`  | Russian  | [TODO](https://github.com/darigovresearch/Intro-to-DIY-Off-Grid-Systems/issues/14) | [Pending Translation, want to help?](https://github.com/darigovresearch/Intro-to-DIY-Off-Grid-Systems/issues/14) | [TODO](https://github.com/darigovresearch/Intro-to-DIY-Off-Grid-Systems/issues/14) | [TODO](https://github.com/darigovresearch/Intro-to-DIY-Off-Grid-Systems/issues/14) |
 | `sh`  | Serbo-Croatian  | [TODO](https://github.com/darigovresearch/Intro-to-DIY-Off-Grid-Systems/issues/7) | [Pending Translation, want to help?](https://github.com/darigovresearch/Intro-to-DIY-Off-Grid-Systems/issues/7) | [TODO](https://github.com/darigovresearch/Intro-to-DIY-Off-Grid-Systems/issues/7) | [TODO](https://github.com/darigovresearch/Intro-to-DIY-Off-Grid-Systems/issues/7) |
 
+We have also been experimenting with a [sphinx-based](https://www.sphinx-doc.org/en/master/) version [at this URL](https://darigovresearch.github.io/Intro-to-DIY-Off-Grid-Systems/) which may end up being easier to convert to offline pdfs & a more interactive site.
 
 ## Potential Improvements Yet to be Made
 1. To find a way to systematically pull the content if there are any updates from the original source in the future.
