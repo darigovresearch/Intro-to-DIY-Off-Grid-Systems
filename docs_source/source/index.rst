@@ -10,11 +10,19 @@ Welcome to Intro to DIY Off Grid Systems's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   preface
+   introduction
+   basic_concepts
+   what_is_an_off_grid_system
+   generation
+   storage
+   charge_control
+   discharge_control
+   other_system_level_equipment
+   usage_level_equipment
+   appliances
+   constructing_a_simple_12v_off-grid_circuit
+   additional_system_modelling
+   constructing_the_whole_system
+   resources
+   appendices
