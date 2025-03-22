@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Intro to DIY Off Grid Systems'
-copyright = '2021-2022, Demand Energy Equality'
+copyright = '2021-2025, Demand Energy Equality'
 author = 'Demand Energy Equality'
 
 # The full version, including alpha/beta/rc tags
